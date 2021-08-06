@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <script>
+        function transfert() {
+            let bb = document.getElementById("input17");
+            let cc = document.getElementById("input18");
+            let dd = document.getElementById("input19");
+            let ee = document.getElementById("input20");
+            let ff = document.getElementById("input21");
+            let gg = document.getElementById("input22");
+            let hh = document.getElementById("input23");
+            let checkk3 = document.getElementById("checkk3");
+            let view = document.getElementById("view");
+            if (view.style.display === "none") {
+                view.style.display = "block";
+            }
+
+
+        }
+        $(document).ready(function() {
+            $("#checkk1").click(function(event) {
+                $("#view").hide();
+            });
+        });
+        $(document).ready(function() {
+            $("#checkk2").click(function(event) {
+                $("#view").hide();
+            });
+        });
+        $(document).ready(function() {
+            $("#checkk4").click(function(event) {
+                $("#view").hide();
+            });
+        });
+        $(document).ready(function() {
+            $("#checkk3").click(function(event) {
+                $("#view").show();
+            });
+        });
+
+
+        function reset() {
+
+            let elemnt = getElementById("input");
+            let reset = getElementById("reset");
+            elemnt.value = " "
+
+        }
+
+        function validateForm() {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            var c = document.getElementById("input3").value;
+            var d = document.getElementById("input4").value;
+            var e = document.getElementById("input5").value;
+            var f = document.getElementById("input6").value;
+            var g = document.getElementById("input7").value;
+            var h = document.getElementById("input8").value;
+            var i = document.getElementById("input9").value;
+            var j = document.getElementById("input10").value;
+            var k = document.getElementById("input11").value;
+            var l = document.getElementById("input12").value;
+            var m = document.getElementById("input13").value;
+            var n = document.getElementById("input14").value;
+            var o = document.getElementById("input15").value;
+            var p = document.getElementById("input16").value;
+            var reset = document.getElementById("reset");
+            var impr = document.getElementById("impression");
+            var copier = document.getElementById("copier");
+            var copie = document.getElementById("copie");
+            var inputs = document.getElementsByName("input");
+
+            if (a < 2) {
+
+                return false;
+            }
+            if (b == "") {
+
+
+                return false;
+            }
+            if (c < 8) {
+
+
+                return false;
+
+            }
+            if (d == "") {
+
+
+                return false;
+            }
+            if (e == "") {
+                return false;
+            }
+            if (f == "") {
+
+                return false;
+            }
+            if (g == "") {
+
+                return false;
+            }
+            if (i == "") {
+
+                return false;
+            }
+            if (k == "") {
+
+
+                return false;
+            }
+            if (m == "") {
+
+                return false;
+            }
+            if (o == "") {
+
+                return false;
+            }
+            if (p.indexOf("@", 0) < 0) {
+
+                return false;
+            }
+            if (p.indexOf(".", 0) < 0) {
+
+                return false;
+            }
+            if (h.indexOf(".", 0) < 0) {
+
+                return false;
+            }
+            if (l.indexOf(".", 0) < 0) {
+
+                return false;
+            }
+            if (l.indexOf("@", 0) < 0) {
+
+                return false;
+            }
+            if (h.indexOf("@", 0) < 0) {
+
+                return false;
+            }
+            copier.style.visibility = 'hidden';
+            copie.style.visibility = 'hidden';
+            impr.style.visibility = 'hidden';
+            reset.style.visibility = 'hidden';
+
+
+
+            window.print()
+
+            return true;
+
+
+        }
+
+
+        function copier1() {
+
+            var b = document.getElementById("input2").value;
+            var c = document.getElementById("input3").value;
+            var d = document.getElementById("input4").value;
+            var e = document.getElementById("input5").value;
+            var f = document.getElementById("input6").value;
+            var g = document.getElementById("input7").value;
+            var h = document.getElementById("input8").value;
+            let i = document.getElementById("input9");
+            let j = document.getElementById("input10");
+            let k = document.getElementById("input11");
+            let l = document.getElementById("input12");
+
+            i.value = b
+            j.value = c
+            k.value = g
+            l.value = h
+        }
+
+        function copier2() {
+            let b = document.getElementById("input2").value;
+            let c = document.getElementById("input3").value;
+            let d = document.getElementById("input4").value;
+            let e = document.getElementById("input5").value;
+            let f = document.getElementById("input6").value;
+            let g = document.getElementById("input7").value;
+            let h = document.getElementById("input8").value;
+            let i = document.getElementById("input9").value;
+            let m = document.getElementById("input13");
+            let n = document.getElementById("input14");
+            let o = document.getElementById("input15");
+            let p = document.getElementById("input16");
+
+            m.value = b
+            n.value = c
+            o.value = g
+            p.value = h
+        }
+
+
+        function verif_tab(tab) {
+            for (var key of Object.keys(tab)) {
+                if (tab[key] == false) {
+                    return false;
+                }
+            }
+            return true
+        }
+
+        function button_status(tableau_associa) {
+            if (verif_tab(tableau_associa)) {
+                $('#impression').attr('disabled', false);
+            } else {
+                $('#impression').attr('disabled', true);
+
+
+            }
+        }
+
+        $(document).ready(function() {
+            $('#impression').attr('disabled', true);
+
+            var tableau_associa = {
+                "input1": false,
+                "input2": false,
+                "input3": false,
+                "input4": false,
+                "input5": false,
+                "input6": false,
+                "input7": false,
+                "input8": false,
+
+            };
+
+            $('#input1').keyup(function() {
+                if ($(this).val().length != 0)
+                    tableau_associa.input1 = true;
+                else {
+                    tableau_associa.input1 = false;
+                }
+                button_status(tableau_associa);
+
+            });
+            $('#input2').keyup(function() {
+                if ($(this).val().length != 0)
+                    tableau_associa.input2 = true;
+                else {
+                    tableau_associa.input2 = false;
+                }
+                button_status(tableau_associa);
+            });
+            $('#input3').keyup(function() {
+                if ($(this).val().length != 0)
+                    tableau_associa.input3 = true;
+                else {
+                    tableau_associa.input3 = false;
+                }
+                button_status(tableau_associa);
+
+            });
+            $('#input4').keyup(function() {
+                if ($(this).val().length != 0)
+                    tableau_associa.input4 = true;
+                else {
+                    tableau_associa.input4 = false;
+                }
+                button_status(tableau_associa);
+
+            });
+            $('#input5').keyup(function() {
+                if ($(this).val().length != 0)
+                    tableau_associa.input5 = true;
+                else {
+                    tableau_associa.input5 = false;
+                }
+                button_status(tableau_associa);
+
+            });
+            $('#input6').keyup(function() {
+                if ($(this).val().length != 0)
+                    tableau_associa.input6 = true;
+                else {
+                    tableau_associa.input6 = false;
+                }
+                button_status(tableau_associa);
+
+            });
+            $('#input7').keyup(function() {
+                if ($(this).val().length != 0)
+                    tableau_associa.input7 = true;
+                else {
+                    tableau_associa.input7 = false;
+                }
+                button_status(tableau_associa);
+
+            });
+            $('#input8').keyup(function() {
+                if ($(this).val().length != 0)
+                    tableau_associa.input8 = true;
+                else {
+                    tableau_associa.input8 = false;
+                }
+                button_status(tableau_associa);
+
+            });
+
+
+        });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flexbox;
+        }
+        
+        body {
+            text-align: center;
+        }
+        
+        #reset,
+        #impression {
+            border-color: white;
+            height: 30px;
+            font-size: 15px;
+            background-color: #B0C4DE;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        #copier,
+        #copie {
+            border-color: rgb(105, 107, 107);
+            height: 25px;
+            font-size: 15px;
+            background-color: #adadad;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        
+        form {
+            margin-left: 70px;
+            margin-right: 70px;
+            border: 1;
+            border-color: black;
+            background-color: white;
+        }
+        
+        .number {
+            background-color: #B22222;
+            color: white;
+            border: 2;
+            border-style: ridge;
+            border-color: white;
+        }
+        
+        .img {
+            float: left;
+        }
+        
+        .adresse {
+            float: right;
+            text-align: center;
+        }
+        
+        #left1 {
+            float: left;
+            text-align: left;
+            display: inline;
+        }
+        
+        #right1 {
+            float: right;
+            text-align: right;
+            display: inline;
+        }
+        
+        #left {
+            float: right;
+            display: inline;
+        }
+        
+        #center {
+            float: center;
+            display: inline-block;
+        }
+        
+        #right {
+            float: left;
+            display: inline;
+        }
+        
+        .erreur {
+            background: red;
+        }
+        
+        .police {
+            font-size: 13px;
+        }
+        
+        input {
+            background-color: #92a8d1;
+            border-style: none;
+        }
+        
+        @media print {
+            input {
+                background-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body id="content">
+
+    <form>
+        <div class="img">
+            <img src="logo.png" style="float: left;width: 75%;"> </div>
+        <div class="adresse">
+            <br>
+            <div style="font-size: small;"> <strong> Mind Hosting </strong> <br>.TN DOMAIN <br> Accredited register <br> ID:1655285/A</div>
+        </div>
+        <table border="4" style="border-color:#DEB887;border-style:solid;" width="100%">
+            <tr>
+                <td>;
+                    <h3 style="font-size: medium;">استمارة خاصة بطلب تسجيل اسم مجال أنترنات <br> Formulaire de demande d’enregistrement d’un nom de domaine Internet </h3>
+                </td>
+            </tr>
+        </table>
+
+
+        <div id="left1"><span class="number" id="n11"> 1</span>
+            <B>Nature de la demande </B> </div>
+        <div id="right1"><span class="number" id="n12">1</span> </div>
+        <div id="left">
+            <B>طبيعة الطلب</B>
+        </div>
+        <div>
+            <table border="1" style="border-color:#DEB887" width="100%">
+                <tr>
+                    <td>
+                        <label class="police"> changement de bureau d 'enregistrement </label> <input type="radio" id="checkk1" name="nature" required="required">
+                        <label class="police"> تغيير مكتب التسجيل </label>
+                        <label class="police">suspenssion</label><input type="radio" id="checkk2" name="nature" required="required">
+                        <label class="police">تعليق  </label><label class="police">transfert</label> <input type="radio" id="checkk3" name="nature" required="required"> <label class="police">
+                        إحالة </label>
+                        <label class="police">Enregistrement </label> <input type="radio" id="checkk4" name="nature" required="required" checked> <label class="police">تسجيل</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="left1"><span class="number" id="n21">2</span>
+            <B>Nom de domaine Internet</B>
+        </div>
+        <div id="right1"><span class="number" id="n22">2</span> </div>
+        <div id="left">
+            <B>اسم مجال الانترنات</B>
+        </div>
+        <div>
+            <table border="1" style="border-color:#DEB887" width="100%">
+                <tr>
+                    <td> www. <input type="text" id="input1" class="input" size="50" name="nom" minlength="2" required>
+                        <select id="tld" name="tld">
+  <option value=".tn">.tn</option>
+  <option value=".com.tn">.com.tn</option>
+  <option value=".ens.tn">.ens.tn</option>
+  <option value=".fin.tn">.fin.tn</option>
+    <option value=".gov.tn">.gov.tn</option>
+  <option value=".ind.tn">.ind.tn</option>
+  <option value=".intl.tn">.intl.tn</option>
+  <option value=".nat.tn">.nat.tn</option>
+  <option value=".net.tn">.net.tn</option>
+  <option value=".org.tn">.org.tn</option>
+  <option value=".info.tn">.info.tn</option>
+  <option value=".perso.tn">.perso.tn</option>
+  <option value=".tourism.tn">.tourism.tn</option>
+  <option value=".rnrt.tn">.rnrt.tn</option>
+  <option value=".rns.tn">.rns.tn</option>
+  <option value=".rnu.tn">.rnu.tn</option>
+  <option value=".mincom.tn">.mincom.tn</option>
+  <option value=".agrinet.tn">.agrinet.tn</option>
+  <option value=".turen.tn">.turen.tn</option>
+
+</select>
+
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+        <div id="left1"><span class="number" id="n31">3</span>
+            <B>Le demandeur</B>
+        </div>
+        <div id="right1"><span class="number" id="n32">3</span> </div>
+        <div id="left">
+            <B>صاحب الطلب</B>
+        </div>
+        <div>
+            <table border="1" style="border-color:#DEB887" width="100%">
+                <tr>
+                    <td>
+                        <div id="left1" class="police">
+                            nom et prénom ou raison sociale : <br> numéro de CIN:<br> Registre de commerce: <br> domaine d'activité:<br> adresse ou siège social :<br> adresse/fax : <br> Email: <br>
+                        </div>
+                        <div id="center" name="RegForm">
+                            <input type="text" class="input" name="nom" id="input2" minlength="4" required> <br>
+                            <span id="name1"></span>
+                            <input type="text" class="input" name="cin" id="input3" pattern="[0-9]{8}" maxlength="8" required><br>
+                            <span id="cin"></span>
+                            <input type="text" class="input" name="nom" id="input4" minlength="4" required> <br>
+                            <span id="name2"></span>
+                            <input type="text" class="input" name="nom" id="input5" minlength="4" required> <br>
+                            <span id="name3"></span>
+                            <input type="text" class="input" name="nom" id="input6" minlength="4" required> <br>
+                            <span id="name4"></span>
+                            <input type="text" class="input" name="nom" id="input7" minlength="4" required> <br>
+                            <span id="name5"></span>
+                            <input type="email" class="input" name="email" id="input8" pattern="[a-zA-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required> <br>
+                            <span id="mail"></span>
+                        </div>
+                        <div id="right1" class="police">
+                            :الاسم و اللقب او الاسم التجاري<br> :رقم بطاقة التعريف الوطنية <br> : السجل التجاري <br> : ميدان النشاط <br> :العنوان او المقر الاجتماعي <br> :الهاتف/الفاكس <br> : البريد الالكتروني <br>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="left1"><span class="number" id="n41">4</span>
+            <B>contacts</B> <input type="button" id="copier" onclick="copier1()" value="copier" style="visibility: visible;">
+
+        </div>
+        <div id="right1"><span class="number" id="n42">4</span> </div>
+        <div id="left">
+            <input id="copie" type="button" onclick="copier2()" value="copier" style="visibility: visible;">
+            <B> نقاط الاتصال</B>
+        </div>
+
+        <div>
+            <table border="1" style="border-color:#DEB887" width="100%">
+                <tr>
+                    <td>
+                        <strong>contact technique </strong> <br>
+                        <div id="left1" style="width: 13%;" class="police">
+                            nom et prénom:<br> numéro de CIN:<br> adresse/fax: <br> Email: <br>
+                        </div>
+                        <div id="center" name="RegForm" style="width: 30%;padding-right: 30%;">
+                            <input type="text" class="input" name="nom" size="19" id="input9" minlength="4" required><br>
+                            <input type="tel" class="input" name="cin " size="19" id="input10" pattern="[0-9]{8}" maxlength="8" required> <br>
+                            <input type="text" class="input" name="nom " size="19" id="input11" minlength="4" required> <br>
+                            <input type="email" class="input" name="email " size="19" pattern="[a-zA-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="input12" required> <br>
+                        </div>
+                        <div id="right1" style="width:30%;" class="police">
+                            : الاسم التجاري<br> :رقم بطاقة التعريف الوطنية <br> :الهاتف/الفاكس <br> : البريد الالكتروني <br>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>contact administratif </strong> <br>
+                        <div id="left1" style="width: 13%;" class="police">
+                            nom et prénom:<br> numéro de CIN:<br> adresse/fax: <br> Email: <br>
+                        </div>
+        </div>
+        <div id="center" name="RegForm " style="width: 30%;padding-right: 30%;">
+            <input type="text" class="input" name="nom" id="input13" size="19" minlength="4" required> <br>
+            <input type="tel" class="input" name="cin " id="input14" size="19" pattern="[0-9]{8}" maxlength="8" required> <br>
+            <input type="text" class="input" name="nom " id="input15" size="19" minlength="4" required> <br>
+            <input type="email" class="input" name="email " size="19" pattern="[a-zA-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="input16" required> <br>
+        </div>
+        <div id="right1" style="width: 30%;" class="police">
+            : الاسم التجاري<br> :رقم بطاقة التعريف الوطنية <br> :الهاتف/الفاكس <br> : البريد الالكتروني <br>
+        </div>
+        </td>
+        </tr>
+        </table>
+        <div id="view" style="display: none;">
+            <div id="left1"><span class="number" id="n51">5</span>
+                <B>le bénéficiaire(en cas de transfert)</B>
+            </div>
+            <div id="right1"><span class="number" id="n52">5</span> </div>
+            <div id="left">
+                <B>المستفيد (في حالة الاحالة)</B>
+            </div>
+            <table border="1" style="border-color:#DEB887 " width="100% ">
+                <tr>
+                    <td>
+                        <div id="left1" class="police">
+                            nom et prénom ou raison social : <br> numéro de CIN:<br> Registre de commerce: <br> domaine d'activité:<br> adresse ou siège social :<br> adresse/fax : <br> Email: <br>
+                        </div>
+                        <div id="center">
+                            <input type="text " id="input17" readonly="false"> <br>
+                            <input type="number " id="input18" readonly> <br>
+                            <input type="text " id="input19" readonly> <br>
+                            <input type="text " id="input20" readonly> <br>
+                            <input type="text " id="input21" size="30 " readonly> <br>
+                            <input type="number " id="input22" readonly> <br>
+                            <input type="email " id="input23" readonly>
+
+                        </div>
+                        <div id="right1" class="police">
+                            :الاسم و اللقب او الاسم التجاري<br> :رقم بطاقة التعريف الوطنية <br> : السجل التجاري <br> : ميدان النشاط <br> :العنوان او المقر الاجتماعي <br> :الهاتف/الفاكس <br> : البريد الالكتروني <br>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="left1"><span class="number" id="n61 ">6</span>
+            <B>bureau d'enregistrement bénéficiaire</B>
+        </div>
+        <div id="right1"><span class="number" id="n62 ">6</span> </div>
+        <div id="left">
+            <B>مكتب التسجيل المستفيد</B>
+        </div>
+        <div>
+            <table border="1" style="border-color:#DEB887 " width="100% ">
+                <tr>
+                    <td> <input type="text" id="input" value=" &nbsp;&nbsp;&nbsp;&nbsp; MIND HOSTING" readonly placeholder=" &nbsp;&nbsp; MIND HOSTING ">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <div>
+            <table border="1" style="border-color:#DEB887 " width="100% ">
+                <tr>
+                    <td>
+                        cachet et décision du bureau d'enregistrement <br> ختم و قرار مكتب التسجيل <br> <br><br>
+                    </td>
+                    <td>
+                        cachet et signature du contact administratif <br> امضاء و ختم المسؤول الاداري <br> <br><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <footer>
+            <table border="1" style="border-color:black " width="100% ">
+                <tr>
+                    <td>
+                        <div id="left1" style="width: 30%;"> <img src="11.png " style="float:left;width:8%; ">
+                            <div style="width: 90%;" id="left1">Technopark Manouba</div> <br><br>
+                            <img src="22.png " style="float:left;width:8% ">
+                            <div style="width: 90%;" id="left1">BP 15 Manouba 2010</div>
+                        </div>
+                        <div id="center" style="width: 30%;"> <img src="33.png " style="float:left;width: 8%; ">
+                            <div style="width: 90%;" id="left1">www.mind.hosting" </div><br><br>
+                            <img src="44.png" style="float:left;width:8%;">
+                            <div style="width: 90%;" id="left1">contact@mind.hosting</div>
+                        </div>
+                        <div id="right1" style="width: 30%;"><img src="55.png" style="float:left;width:8%;">
+                            <div style="width: 90%;" id="left1">70.526.311</div> <br><br>
+                            <img src="66.png" style="float:left;width:8%;">
+                            <div style="width: 90%;" id="left1">99.300.800 </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </footer>
+
+
+        <button type="reset" id="reset" onclick="reset()" style="visibility: visible;" value="RESET">RESET</button>
+        <div id="editor"></div>
+        <button id="impression" type="submit" onclick="validateForm()" style="visibility: visible;" value="IMPRIMER">IMPRIMER</button>
+
+
+    </form>
+
+</body>
+
+</html>
